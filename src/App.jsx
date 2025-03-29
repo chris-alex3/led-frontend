@@ -21,13 +21,16 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-        </a>
-        <a href="https://react.dev" target="_blank">
-        </a>
-      </div>
-      <h1>LED Timeline</h1>
+  <div>
+    <a href="https://vite.dev" target="_blank"></a>
+    <a href="https://react.dev" target="_blank"></a>
+  </div>
+
+  {/* 👇 Add this line */}
+  <p className="welcome-text"></p>
+
+  <h1>Welcome to your LED Timer!</h1>
+
       <div className="card">
       <button onClick={() => setIsOn(!isOn)} className={isOn ? "on" : "off"}>
           {isOn ? "ON" : "OFF"}

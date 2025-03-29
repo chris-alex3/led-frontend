@@ -22,10 +22,10 @@ body {
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #bbb); /* Lighter glow */
+  filter: drop-shadow(0 0 2em #dce224); /* Lighter glow */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafb); /* React blue glow */
+  filter: drop-shadow(0 0 2em #666a6b); /* React blue glow */
 }
 
 /* Animation */
@@ -54,25 +54,61 @@ body {
 
 /* Read-the-docs text */
 .read-the-docs {
-  color: #bbb; /* Slightly lighter for readability */
+  color: #dec839; /* Slightly lighter for readability */
 }
 
 /* Toggle Button */
 button {
-  padding: 10px 20px;
+  /* margin-top: 1rem;  */
+  margin-left: 1rem;
+  padding: 8px 15px;
   font-size: 18px;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: background 0.3s ease-in-out;
 }
 
 .on {
-  background: #4caf50; /* Green for ON */
-  color: white;
+  background: #1f211f; /* Green for ON */
+  color: rgb(234, 212, 64);
 }
 
 .off {
-  background: #cabc23; /* Red for OFF */
-  color: white;
+  background: #1b1b1b; /* Red for OFF */
+  color: rgb(225, 219, 36);
 }
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between input and save button */
+  margin-top: 1.5rem; /* optional space between sections */
+  justify-content: center;
+}
+
+/* Optional: styling for input */
+.input-container input {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+/* Save button styles */
+.save-btn {
+  background-color: black;
+  color: #e7d538;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #222;
+}
+
